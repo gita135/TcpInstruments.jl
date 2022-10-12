@@ -22,5 +22,6 @@ makedocs(
 # See "Hosting Documentation" and deploydocs() in the Documenter manual
 # for more information.
 deploydocs(
-    repo = "github.com/Orchard-Ultrasound-Innovation/TcpInstruments.jl.git"
+    repo = "github.com/Orchard-Ultrasound-Innovation/TcpInstruments.jl.git",
+    versions = ["stable" => "v^", "v#.#", "dev" => "stable"]
 )
