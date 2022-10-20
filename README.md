@@ -1,7 +1,7 @@
 # TcpInstruments
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://Orchard-Ultrasound-Innovation.github.io/TcpInstruments.jl/stable)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://orchard-ultrasound-innovation.github.io/TcpInstruments.jl/dev/)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://gita.github.io/TcpInstruments.jl/dev/)
 [![Build Status](https://github.com/Orchard-Ultrasound-Innovation/TcpInstruments.jl/workflows/CI/badge.svg)](https://github.com/Orchard-Ultrasound-Innovation/TcpInstruments.jl/actions)
 [![codecov](https://codecov.io/gh/Orchard-Ultrasound-Innovation/TcpInstruments.jl/branch/master/graph/badge.svg?token=NJAVMHUAT3)](https://codecov.io/gh/Orchard-Ultrasound-Innovation/TcpInstruments.jl)
 [![Code Style: Blue](https://img.shields.io/badge/code%20style-blue-4495d1.svg)](https://github.com/invenia/BlueStyle)
