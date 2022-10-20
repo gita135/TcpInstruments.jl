@@ -23,6 +23,5 @@ makedocs(
 # for more information.
 deploydocs(
     repo = "github.com/Orchard-Ultrasound-Innovation/TcpInstruments.jl.git",
-    # versions = ["stable" => "v^", "v#.#", "dev" => "stable"]
-    devbranch="main",
+    target = "build"
 )
