@@ -5,7 +5,7 @@ using TcpInstruments
 makedocs(
     sitename = "TcpInstruments",
     format = Documenter.HTML(
-        prettyurls = get(ENV, "CI", nothing) == "true"
+        prettyurls = get(ENV, "CI", "false") == "true"
     ),
     pages = [
         "Home" => "index.md",
@@ -23,5 +23,6 @@ makedocs(
 # for more information.
 deploydocs(
     repo = "github.com/Orchard-Ultrasound-Innovation/TcpInstruments.jl.git",
+    # versions = ["stable" => "v^", "v#.#", "dev" => "stable"]
     devbranch="main",
 )
