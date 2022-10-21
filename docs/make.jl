@@ -23,5 +23,7 @@ makedocs(
 # for more information.
 deploydocs(
     repo = "github.com/gita135/TcpInstruments.jl.git",
-    target = "build"
+    branch = "gh-pages",
+    target = "build",
+    versions = ["stable" => "v^", "v#.#", dev => dev],
 )
