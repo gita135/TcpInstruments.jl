@@ -25,5 +25,5 @@ deploydocs(
     repo = "github.com/gita135/TcpInstruments.jl.git",
     branch = "gh-pages",
     target = "build",
-    versions = ["stable" => "v^", "v#.#", "dev" => "dev"],
+    # versions = ["stable" => "v^", "v#.#", "dev" => "dev"],
 )
