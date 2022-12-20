@@ -48,6 +48,7 @@ using MAT
 using JLD2
 using RecipesBase
 import InstrumentConfig: initialize, terminate
+using DocStringExtensions
 
 using Unitful
 using Unitful: s, ms, μs, ns, ps

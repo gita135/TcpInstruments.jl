@@ -34,6 +34,7 @@ Supported functions
 """
 abstract type AgilentScope <: Oscilloscope end
 """
+$(TYPEDEF)
 Supported functions
 - [`initialize`](@ref)
 - [`terminate`](@ref)

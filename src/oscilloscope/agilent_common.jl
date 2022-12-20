@@ -1,6 +1,7 @@
 """
+$(SIGNATURES)
     get_data(scope, channel_vector; check_channels=true)
-    get_data(scope, channel=1)
+    get_data(scope, channel)
     get_data(scope)
 
 Grab data from the specified channel(s). If no channels are specified, data will be grabbed
@@ -162,6 +163,7 @@ end
 
 
 """
+$(SIGNATURES)
     get_waveform_info(scope, channel)
 
 Grab channel information and return it in a `ScopeInfo`(@ref) struct
@@ -217,6 +219,7 @@ get_coupling(instr::Instr{<:AgilentScope}; chan=1) = query(instr, "CHANNEL$chan:
 
 
 """
+$(SIGNATURES)
     lpf_on(scope; chan=1)
 
 Turn on an internal low-pass filter. When the filter is on, the bandwidth of
