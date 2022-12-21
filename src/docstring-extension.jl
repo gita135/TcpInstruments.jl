@@ -21,3 +21,10 @@ DocStringExtensions.@template TYPES =
     ~~~~~~~~
     $(EXPORTS)
     """
+
+DocStringExtensions.@template EXPORTS =
+"""
+    $(TYPEDSIGNATURES)
+
+    $(DOCSTRING)
+"""
