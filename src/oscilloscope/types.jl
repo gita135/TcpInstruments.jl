@@ -35,7 +35,6 @@ Supported functions
 abstract type AgilentScope <: Oscilloscope end
 """
 $(TYPEDEF)
-$(EXPORTS)
 Supported functions
 - [`initialize`](@ref)
 - [`terminate`](@ref)
@@ -54,6 +53,7 @@ Supported functions
 - [`lpf_on`](@ref)
 - [`lpf_off`](@ref)
 - [`get_coupling`](@ref)
+$(EXPORTS)
 """
 struct AgilentDSOX4024A <: AgilentScope end
 """
