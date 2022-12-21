@@ -163,7 +163,7 @@ end
 
 
 """
-$(SIGNATURES)
+$(TYPEDSIGNATURES)
     get_waveform_info(scope, channel)
 
 Grab channel information and return it in a `ScopeInfo`(@ref) struct
@@ -229,7 +229,7 @@ lpf_on(instr::Instr{<:AgilentScope}; chan=1) = write(instr, "CHANNEL$chan:BWLIMI
 
 
 """
-    lpf_off(scope; chan=1)
+    $(TYPEDSIGNATURES)
 
 Turn off an internal low-pass filter.
 """
