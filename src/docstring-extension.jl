@@ -1,6 +1,6 @@
 import DocStringExtensions
 import DocStringExtensions: SIGNATURES, TYPEDSIGNATURES, DOCSTRING,
-    FIELDS, TYPEDFIELDS
+    FIELDS, TYPEDFIELDS,EXPORTS
 
 DocStringExtensions.@template (FUNCTIONS, METHODS, MACROS) =
     """
@@ -17,4 +17,7 @@ DocStringExtensions.@template TYPES =
     ---
 
     $(DOCSTRING)
+
+    ~~~~~~~~
+    $(EXPORTS)
     """
