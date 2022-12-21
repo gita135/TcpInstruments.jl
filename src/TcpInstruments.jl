@@ -179,4 +179,6 @@ include("multimeter/all.jl")
 include("source_measure_unit/all.jl")
 
 include("emulator/emulator.jl")
+
+include("docstring-extension.jl");
 end #endmodule

@@ -1,7 +1,6 @@
 """
 Supported Instruments:
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-$(EXPORTS)
   - [`AgilentDSOX4024A`](@ref)
   - [`AgilentDSOX4034A`](@ref)
 """
