@@ -56,6 +56,7 @@ Supported functions
 """
 struct AgilentDSOX4024A <: AgilentScope end
 """
+$(TYPEDEF)
 Supported functions
 - [`initialize`](@ref)
 - [`terminate`](@ref)
@@ -74,7 +75,6 @@ Supported functions
 - [`lpf_on`](@ref)
 - [`lpf_off`](@ref)
 - [`get_coupling`](@ref)
-$(FIELDS)
 """
 struct AgilentDSOX4034A <: AgilentScope end
 
