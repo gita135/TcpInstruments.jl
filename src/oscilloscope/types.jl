@@ -1,7 +1,6 @@
 """
 Supported Instruments:
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-
   - [`AgilentDSOX4024A`](@ref)
   - [`AgilentDSOX4034A`](@ref)
 """
@@ -53,6 +52,7 @@ Supported functions
 - [`lpf_on`](@ref)
 - [`lpf_off`](@ref)
 - [`get_coupling`](@ref)
+
 """
 struct AgilentDSOX4024A <: AgilentScope end
 """
