@@ -33,7 +33,6 @@ Supported functions
 """
 abstract type AgilentScope <: Oscilloscope end
 """
-$(TYPEDEF)
 Supported functions
 - [`initialize`](@ref)
 - [`terminate`](@ref)
@@ -56,7 +55,6 @@ Supported functions
 """
 struct AgilentDSOX4024A <: AgilentScope end
 """
-$(TYPEDEF)
 Supported functions
 - [`initialize`](@ref)
 - [`terminate`](@ref)

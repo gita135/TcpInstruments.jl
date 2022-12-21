@@ -294,7 +294,14 @@ get_waveform_preamble(instr::Instr{<:AgilentScope}) = query(instr, "WAVEFORM:PRE
 get_waveform_source(instr::Instr{<:AgilentScope}) = query(instr, "WAVEFORM:SOURCE?")
 
 get_data_transfer_format(instr::Instr{<:AgilentScope}) = query(instr, "WAVEFORM:FORMAT?")
+
+"""
+Set data transfer format to 8bit
+"""
 set_data_transfer_format_8bit(instr::Instr{<:AgilentScope}) = write(instr, "WAVEFORM:FORMAT BYTE")
+"""
+Set data transfer format to 16bit
+"""
 set_data_transfer_format_16bit(instr::Instr{<:AgilentScope}) = write(instr, "WAVEFORM:FORMAT WORD")
 
 get_waveform_num_points(instr::Instr{<:AgilentScope}) = query(instr, "WAVEFORM:POINTS?")
