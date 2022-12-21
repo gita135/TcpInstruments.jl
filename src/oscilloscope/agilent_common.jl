@@ -1,8 +1,5 @@
 """
-$(SIGNATURES)
-    get_data(scope, channel_vector; check_channels=true)
-    get_data(scope, channel)
-    get_data(scope)
+    $(TYPEDSIGNATURES)
 
 Grab data from the specified channel(s). If no channels are specified, data will be grabbed
 from all available channels
@@ -163,8 +160,7 @@ end
 
 
 """
-$(TYPEDSIGNATURES)
-    get_waveform_info(scope, channel)
+    $(TYPEDSIGNATURES)
 
 Grab channel information and return it in a `ScopeInfo`(@ref) struct
 """
@@ -219,7 +215,7 @@ get_coupling(instr::Instr{<:AgilentScope}; chan=1) = query(instr, "CHANNEL$chan:
 
 
 """
-$(SIGNATURES)
+    $(TYPEDSIGNATURES)
 
 Turn on an internal low-pass filter. When the filter is on, the bandwidth of
 the specified channel is limited to approximately 25 MHz.
@@ -228,8 +224,7 @@ lpf_on(instr::Instr{<:AgilentScope}; chan=1) = write(instr, "CHANNEL$chan:BWLIMI
 
 
 """
-$(TYPEDSIGNATURES)
-    lpf_on(scope; chan=1)
+    $(TYPEDSIGNATURES)
 
 Turn off an internal low-pass filter.
 """
@@ -237,7 +232,7 @@ lpf_off(instr::Instr{<:AgilentScope}; chan=1) = write(instr, "CHANNEL$chan:BWLIM
 
 
 """
-$(TYPEDSIGNATURES)
+    $(TYPEDSIGNATURES)
 
 See state the internal low-pass filter:
 
