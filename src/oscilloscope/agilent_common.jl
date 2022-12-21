@@ -220,7 +220,6 @@ get_coupling(instr::Instr{<:AgilentScope}; chan=1) = query(instr, "CHANNEL$chan:
 
 """
 $(SIGNATURES)
-    lpf_on(scope; chan=1)
 
 Turn on an internal low-pass filter. When the filter is on, the bandwidth of
 the specified channel is limited to approximately 25 MHz.
@@ -229,7 +228,8 @@ lpf_on(instr::Instr{<:AgilentScope}; chan=1) = write(instr, "CHANNEL$chan:BWLIMI
 
 
 """
-    $(TYPEDSIGNATURES)
+$(TYPEDSIGNATURES)
+    lpf_on(scope; chan=1)
 
 Turn off an internal low-pass filter.
 """
@@ -237,7 +237,7 @@ lpf_off(instr::Instr{<:AgilentScope}; chan=1) = write(instr, "CHANNEL$chan:BWLIM
 
 
 """
-    get_lpf_state(scope; chan=1)
+$(TYPEDSIGNATURES)
 
 See state the internal low-pass filter:
 
