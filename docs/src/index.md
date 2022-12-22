@@ -302,12 +302,12 @@ data = get_data(scope)
 ```
 Since the only activated channels are now only 1 & 2 this returns an array of waves (equivalent to `get_data(scope, [1,2]))
 
-You can also plot multiple waves at once:
+You can also plot multiple waveys at once:
 ```julia
 plot(data)
 ```
 
-![wave](examples/wave.png)
+![wave](../../examples/wave.png)
 
 
 ### Impedance Analyzers
